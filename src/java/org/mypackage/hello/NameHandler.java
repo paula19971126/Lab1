@@ -15,13 +15,32 @@ public class NameHandler {
     int ano;
     String fechadenacimiento;
     int semestre;
+    int eda;
+    
     
     public NameHandler(){
      name = null;   
      ano= 0;
      fechadenacimiento=null;
      semestre =0;
+     eda=0;
     }
+    
+    public void edad (String edad){
+    String vec[];
+    int ano;
+    int cont;
+    vec = edad.split("/");
+    ano= Integer.parseInt(vec[2]);
+    cont = 2020-ano;
+    eda=cont;
+    }
+
+    public int getEda() {
+        edad(fechadenacimiento);
+        return eda;
+    }
+    
 
     public int getSemestre() {
         return semestre;
