@@ -18,7 +18,7 @@
             <input type="text" name="name"  value=""/>
             <input type="submit" value="OK" />
        <br><br>
-            Escriba el ano de ingres
+            Escriba el ano de ingresooooooooooooooooooo
             <input type="text" name="ano"  value=""/>
             <input type="submit" value="OK" />
           <br><br>
