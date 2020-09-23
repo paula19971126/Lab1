@@ -16,31 +16,60 @@ public class NameHandler {
     String fechadenacimiento;
     int semestre;
     int eda;
+    int semestreingreso;
     
     
     public NameHandler(){
+    
      name = null;   
      ano= 0;
+      semestreingreso= 0;
      fechadenacimiento=null;
      semestre =0;
      eda=0;
     }
     
-    public void edad (String edad){
-    String vec[];
-    int ano;
+    public String edad (){
+        int b =0;
+    String vec[]= new String[2];
     int cont;
-    vec = edad.split("/");
-    ano= Integer.parseInt(vec[2]);
-    cont = 2020-ano;
-    eda=cont;
+    vec = fechadenacimiento.split("/");
+    fechadenacimiento= "";
+    b= Integer.parseInt(vec[2]);
+    cont = 2020-b;
+    fechadenacimiento = cont + "";
+    return fechadenacimiento;
+    
+    }
+    public int semestre(){
+       
+    switch (semestre)
+    {
+        case 1: semestreingreso=(2020-ano)*2+1;
+        break;
+        case 2: semestreingreso=((2020-ano)*2);
+        break;
+    }
+    return semestreingreso;
+    
+    }
+
+    public void setEda(int eda) {
+        this.eda = eda;
     }
 
     public int getEda() {
-        edad(fechadenacimiento);
         return eda;
     }
-    
+
+    public int getSemestreingreso() {
+        return semestre();
+    }
+
+    public void setSemestreingreso(int semestreingreso) {
+        this.semestreingreso = semestreingreso;
+    }
+
 
     public int getSemestre() {
         return semestre;
@@ -51,7 +80,7 @@ public class NameHandler {
     }
 
     public String getFechadenacimiento() {
-        return fechadenacimiento;
+        return edad();
     }
 
     public void setFechadenacimiento(String fechadenacimiento) {

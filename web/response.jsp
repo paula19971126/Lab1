@@ -14,20 +14,31 @@
     <body>
         <h1>Hello</h1>
         <jsp:useBean id="mybean" scope="session" class="org.mypackage.hello.NameHandler" />
+        <p>
         <jsp:setProperty name="mybean" property="name" />
         Nombre:
         <jsp:getProperty name="mybean" property="name" />
+        </p>
+        <p>
         <jsp:setProperty name="mybean" property="ano" />
-        Ano de ingreso
+        Ano de ingreso:
         <jsp:getProperty name="mybean" property="ano" />
+        </p>
+        <p>
         <jsp:setProperty name="mybean" property="fechadenacimiento" />
-        fecha de nacimiento
+        Edad:
         <jsp:getProperty name="mybean" property="fechadenacimiento" />
+        </p>
+         <p> 
         <jsp:setProperty name="mybean" property="semestre" />
-        semestre
+        semestre:
         <jsp:getProperty name="mybean" property="semestre" />
-        
-     
+        </p>
+        <p> 
+        <jsp:setProperty name="mybean" property="semestreingreso" />
+        semestres cursados:
+        <jsp:getProperty name="mybean" property="semestreingreso" />
+        </p>
         
     </body>
      
