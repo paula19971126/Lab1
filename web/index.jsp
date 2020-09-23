@@ -18,7 +18,7 @@
             <input type="text" name="name"  value=""/>
        
        <br><br>
-            Escriba el ano de ingresooooooooooooooooooo
+            Escriba el ano de ingreso
             <input type="text" name="ano"  value=""/>
    
           <br><br>
@@ -31,12 +31,6 @@
             <input type="submit" value="OK" />
             
           
-            
-     
-            
-            
-            
-            
             
         </form>
     </body>
