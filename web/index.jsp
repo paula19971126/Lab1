@@ -16,19 +16,27 @@
         <form name="Name Input Form" action="response.jsp">
             Escriba su nombre:
             <input type="text" name="name"  value=""/>
-            <input type="submit" value="OK" />
+       
        <br><br>
             Escriba el ano de ingresooooooooooooooooooo
             <input type="text" name="ano"  value=""/>
-            <input type="submit" value="OK" />
+   
           <br><br>
             Escriba la fecha de nacimiento
             <input type="text" name="fechadenacimiento"  value=""/>
-            <input type="submit" value="OK" />
+          
             <br><br>
             Escriba el semestre en el que ingreso 
              <input type="text" name="semestre"  value=""/>
             <input type="submit" value="OK" />
+            
+          
+            
+     
+            
+            
+            
+            
             
         </form>
     </body>
